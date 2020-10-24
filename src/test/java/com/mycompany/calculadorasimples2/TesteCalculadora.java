@@ -19,4 +19,12 @@ public class TesteCalculadora {
         int soma = calc.soma(5, 7);
         assertEquals(12, soma);
     }
+
+    @Test
+    public void testa_mult() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int soma = calc.mult(5, 7);
+        assertEquals(35, soma);
+    }
+
 }
