@@ -23,8 +23,8 @@ public class TesteCalculadora {
     @Test
     public void testa_mult() {
         CalculadoraSimples calc = new CalculadoraSimples();
-        int soma = calc.mult(5, 7);
-        assertEquals(35, soma);
+        int mult = calc.mult(5, 7);
+        assertEquals(35, mult);
     }
 
 }
