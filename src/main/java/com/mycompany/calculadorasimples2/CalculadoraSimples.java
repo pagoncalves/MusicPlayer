@@ -37,5 +37,10 @@ public class CalculadoraSimples {
             }
 
         }
-}
-}
+}//fim do main
+
+        public int soma(int a, int b){
+          return a + b;
+
+        }
+}//fim da classe

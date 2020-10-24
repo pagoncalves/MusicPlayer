@@ -15,7 +15,7 @@ public class TesteCalculadora {
 
     @Test
     public void test_calculadora() {
-        CalculadoraSimples calc;
+        CalculadoraSimples calc = new CalculadoraSimples();
         int soma = calc.soma(5, 7);
         assertEquals(12, soma);
     }
