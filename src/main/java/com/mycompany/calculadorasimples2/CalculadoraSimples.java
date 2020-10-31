@@ -74,4 +74,13 @@ public class CalculadoraSimples {
         }
         return max;
     }
+
+    public double soma_seq(int n) {
+        int acum = 0;
+        for (int i = 1; i <= n; i++) {
+            acum += i;
+        }
+        return acum;
+
+    }
 }//fim da classe
