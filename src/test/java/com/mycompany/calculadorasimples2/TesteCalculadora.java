@@ -42,4 +42,12 @@ public class TesteCalculadora {
         double maximo = calc.maximo(v);
         assertEquals(10, maximo);
     }
+
+    @Test
+    public void testa_soma_de_sequencia() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        double soma = calc.soma_seq(4);
+        assertEquals(1 + 2 + 3 + 4, soma);
+    }
+
 }
