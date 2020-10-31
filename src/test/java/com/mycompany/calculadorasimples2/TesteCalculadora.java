@@ -27,4 +27,11 @@ public class TesteCalculadora {
         assertEquals(35, mult);
     }
 
+    @Test
+    public void testa_media() {
+        double[] v = {6, 8, 10};
+        double media = calc.media(v);
+        assertEquals(8, media);
+    }
+
 }
