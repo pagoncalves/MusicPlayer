@@ -57,4 +57,12 @@ public class CalculadoraSimples {
         return a / b;
     }
 
+    public double media(double[] v) {
+        double somam = 0;
+        for (int i = 0; i < v.length; i++) {
+            somam += v[i];
+        }
+        return somam / v.length;
+    }
+
 }//fim da classe
