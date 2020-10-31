@@ -35,4 +35,11 @@ public class TesteCalculadora {
         assertEquals(8, media);
     }
 
+    @Test
+    public void testa_media() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        double[] v = {6, 8, 10};
+        double media = calc.media(v);
+        assertEquals(8, media);
+    }
 }
