@@ -65,4 +65,13 @@ public class CalculadoraSimples {
         return somam / v.length;
     }
 
+    public double maximo(double[] v) {
+        double max = v[0];
+        for (int i = 0; i < v.length; i++) {
+            if (max < v[i]) {
+                max = v[i];
+            }
+        }
+        return max;
+    }
 }//fim da classe
