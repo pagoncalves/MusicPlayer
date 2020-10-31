@@ -36,10 +36,10 @@ public class TesteCalculadora {
     }
 
     @Test
-    public void testa_media() {
+    public void testa_maximo() {
         CalculadoraSimples calc = new CalculadoraSimples();
         double[] v = {6, 8, 10};
-        double media = calc.media(v);
-        assertEquals(8, media);
+        double maximo = calc.maximo(v);
+        assertEquals(10, maximo);
     }
 }
