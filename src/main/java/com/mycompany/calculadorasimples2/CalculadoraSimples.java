@@ -100,11 +100,10 @@ public class CalculadoraSimples {
     }
 
     public int soma_quadrados(int n) {
-        int acum = 1;
         int soma = 0;
         for (int i = 1; i <= n; i++) {
-            acum *= i;
-            soma += acum;
+            int quad = i * i;
+            soma += quad;
         }
         return soma;
     }
