@@ -83,4 +83,11 @@ public class CalculadoraSimples {
         return acum;
 
     }
+
+    public double media2(double n1, double n2) {
+        double med = 0;
+        med = (n1 + n2) / 2.0;
+        return med;
+    }
+
 }//fim da classe

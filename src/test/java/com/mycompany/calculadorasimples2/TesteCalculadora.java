@@ -53,7 +53,7 @@ public class TesteCalculadora {
     @Test
     public void testa_media2() {
         CalculadoraSimples calc = new CalculadoraSimples();
-        double media = calc.media2(3,5);
+        double media = calc.media2(3.0,5.0);
         assertEquals(4, media);
     }
 
