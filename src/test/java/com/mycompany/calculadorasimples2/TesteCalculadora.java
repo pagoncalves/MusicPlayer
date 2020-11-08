@@ -71,4 +71,12 @@ public class TesteCalculadora {
         assertEquals(1*1 + 2*2 + 3*3 + 4*4, soma);
     }
     
+    @Test
+    public void testa_soma_quadrados() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        v = {3, 2, 4, 5}
+        int soma = calc.soma_quadrados_vetor(v);
+        assertEquals(3*3 + 2*2 + 4*4 + 5*5, soma);
+    }
+    
 }
