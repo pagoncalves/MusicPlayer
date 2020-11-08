@@ -89,14 +89,24 @@ public class CalculadoraSimples {
         med = (n1 + n2) / 2.0;
         return med;
     }
-    
-    public double potencia(double n1, double n2){
+
+    public double potencia(double n1, int n2) {
         double acum = 1;
-        for (int i = 0; i < n2; i++){
-            acum *= n1 ;
-           
-        } return acum;
-        
+        for (int i = 0; i < n2; i++) {
+            acum *= n1;
+        }
+        return acum;
+
+    }
+
+    public int soma_quadrados(int n) {
+        int acum = 1;
+        int soma = 0;
+        for (int i = 1; i <= n; i++) {
+            acum *= i;
+            soma += acum;
+        }
+        return soma;
     }
 
 }//fim da classe

@@ -69,6 +69,8 @@ public class TesteCalculadora {
         CalculadoraSimples calc = new CalculadoraSimples();
         int soma = calc.soma_quadrados(4);
         assertEquals(1*1 + 2*2 + 3*3 + 4*4, soma);
+        
+        
     }
     
     @Test
