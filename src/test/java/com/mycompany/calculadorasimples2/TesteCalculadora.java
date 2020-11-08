@@ -50,4 +50,10 @@ public class TesteCalculadora {
         assertEquals(1 + 2 + 3 + 4, soma);
     }
 
+    @Test
+    public void testa_media2() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        double media = calc.media2(3,5);
+        assertEquals(4, media);
+    }
 }
