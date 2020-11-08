@@ -64,4 +64,11 @@ public class TesteCalculadora {
         assertEquals(8.0, pot);
     }
 
+    @Test
+    public void testa_soma_vetores() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int soma = calc.soma_de_quadrados(4);
+        assertEquals(1*1 + 2*2 + 3*3 + 4*4, soma);
+    }
+    
 }
