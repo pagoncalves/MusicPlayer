@@ -89,5 +89,14 @@ public class CalculadoraSimples {
         med = (n1 + n2) / 2.0;
         return med;
     }
+    
+    public double potencia(double n1, double n2){
+        double acum = 1;
+        for (int i = 0; i < n2; i++){
+            acum *= n1 ;
+           
+        } return acum;
+        
+    }
 
 }//fim da classe
