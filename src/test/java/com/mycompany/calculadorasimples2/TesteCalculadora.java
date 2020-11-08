@@ -56,4 +56,12 @@ public class TesteCalculadora {
         double media = calc.media2(3,5);
         assertEquals(4, media);
     }
+
+    @Test
+    public void testa_potencia() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        double pot = calc.potencia(2.0 ,3);
+        assertEquals(8.0, pot);
+    }
+
 }
