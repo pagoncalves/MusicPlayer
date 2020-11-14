@@ -89,4 +89,12 @@ public class TesteCalculadora {
         assertEquals(3*2*4*5, mult);
     }
 
+    @Test
+    public void testa_duplica_vetor() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int[] v = {3, 2, 4, 5};
+        calc.duplica_vetor(v);
+        int[] w = {6, 4, 8, 10};
+        assertArrayEquals(w, v);
+    }
 }
