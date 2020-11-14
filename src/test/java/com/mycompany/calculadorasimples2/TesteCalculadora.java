@@ -107,4 +107,12 @@ public class TesteCalculadora {
         assertArrayEquals(w, v);
     }
 
+    @Test
+    public void testa_soma_acumulativa() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int[] v = {3, 2, 4, 5};
+        calc.soma_acumulativa(v);
+        int[] w = {3, 5, 9, 14};
+        assertArrayEquals(w, v);
+    }
 }
