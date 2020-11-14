@@ -81,4 +81,12 @@ public class TesteCalculadora {
         assertEquals(3*3 + 2*2 + 4*4 + 5*5, soma);
     }
     
+    @Test
+    public void testa_mult_vetor() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int[] v = {3, 2, 4, 5};
+        int mult = calc.mult_vetor(v);
+        assertEquals(3*2*4*5, mult);
+    }
+
 }
