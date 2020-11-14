@@ -97,4 +97,14 @@ public class TesteCalculadora {
         int[] w = {6, 4, 8, 10};
         assertArrayEquals(w, v);
     }
+
+    @Test
+    public void testa_incrementa_vetor() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int[] v = {3, 2, 4, 5};
+        calc.incrementa_vetor(v);
+        int[] w = {4, 3, 5, 6};
+        assertArrayEquals(w, v);
+    }
+
 }
