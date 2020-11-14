@@ -108,4 +108,13 @@ public class CalculadoraSimples {
         return soma;
     }
 
+    public int soma_quadrados_vetor(int[] v) {
+        int soma = 0;
+        for (int i = 0; i < v.length; i++) {
+            int quadv = v[i] * v[i];
+            soma += quadv;
+        }
+        return soma;
+    }
+
 }//fim da classe
