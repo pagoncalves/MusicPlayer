@@ -115,4 +115,22 @@ public class TesteCalculadora {
         int[] w = {3, 5, 9, 14};
         assertArrayEquals(w, v);
     }
+
+    @Test
+    public void testa_positivos() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int[] v = {-3, 2, 4, -5};
+        calc.positivos(v);
+        int[] w = {3, 2, 4, 5};
+        assertArrayEquals(w, v);
+    }
+
+    @Test
+    public void testa_inversao() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int[] v = {3, 2, 4, 5};
+        calc.inverte(v);
+        int[] w = {5, 4, 2, 3};
+        assertArrayEquals(w, v);
+    }
 }
