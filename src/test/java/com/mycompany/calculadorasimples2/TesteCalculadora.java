@@ -125,6 +125,16 @@ public class TesteCalculadora {
         assertArrayEquals(w, v);
     }
 
+    /*  Exemplo para trocar dois elementos de lugar:
+    
+    int n = v.lenght;
+    
+    int tmp = v[i];
+    v[i] = v[n - i - 1]
+    v[n - i - 1] = tmp    
+    
+    */
+        
     @Test
     public void testa_inversao() {
         CalculadoraSimples calc = new CalculadoraSimples();
