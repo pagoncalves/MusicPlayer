@@ -133,10 +133,16 @@ public class CalculadoraSimples {
         }
     }
 
-    public void incrementa_vetor(int[] v){
-        for (int i = 0; i < v.length; i++){
-        v[i] += 1;
+    public void incrementa_vetor(int[] v) {
+        for (int i = 0; i < v.length; i++) {
+            v[i] += 1;
+        }
     }
+
+    public void soma_acumulativa(int[] v) {
+        for (int i = 1; i < v.length; i++) {
+            v[i] = v[i] + v[i - 1];
+        }
     }
-            
+
 }//fim da classe
