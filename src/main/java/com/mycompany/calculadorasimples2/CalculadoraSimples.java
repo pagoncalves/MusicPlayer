@@ -116,5 +116,13 @@ public class CalculadoraSimples {
         }
         return soma;
     }
+    
+    public int mult_vetor(int [] v){
+       int mult = 1;
+        for (int i = 0;i < v.length;i++){
+          mult *= v[i];  
+        }
+        return mult;
+    }
 
 }//fim da classe
