@@ -53,14 +53,14 @@ public class TesteCalculadora {
     @Test
     public void testa_media2() {
         CalculadoraSimples calc = new CalculadoraSimples();
-        double media = calc.media2(3.0,5.0);
+        double media = calc.media2(3.0, 5.0);
         assertEquals(4, media);
     }
 
     @Test
     public void testa_potencia() {
         CalculadoraSimples calc = new CalculadoraSimples();
-        double pot = calc.potencia(2.0 ,3);
+        double pot = calc.potencia(2.0, 3);
         assertEquals(8.0, pot);
     }
 
@@ -68,25 +68,24 @@ public class TesteCalculadora {
     public void testa_soma_quadrados() {
         CalculadoraSimples calc = new CalculadoraSimples();
         int soma = calc.soma_quadrados(4);
-        assertEquals(1*1 + 2*2 + 3*3 + 4*4, soma);
-        
-        
+        assertEquals(1 * 1 + 2 * 2 + 3 * 3 + 4 * 4, soma);
+
     }
-    
+
     @Test
     public void testa_soma_quadrados_vetor() {
         CalculadoraSimples calc = new CalculadoraSimples();
         int[] v = {3, 2, 4, 5};
         int soma = calc.soma_quadrados_vetor(v);
-        assertEquals(3*3 + 2*2 + 4*4 + 5*5, soma);
+        assertEquals(3 * 3 + 2 * 2 + 4 * 4 + 5 * 5, soma);
     }
-    
+
     @Test
     public void testa_mult_vetor() {
         CalculadoraSimples calc = new CalculadoraSimples();
         int[] v = {3, 2, 4, 5};
         int mult = calc.mult_vetor(v);
-        assertEquals(3*2*4*5, mult);
+        assertEquals(3 * 2 * 4 * 5, mult);
     }
 
     @Test
@@ -127,20 +126,19 @@ public class TesteCalculadora {
 
     /*  Exemplo para trocar dois elementos de lugar:
     
-    int n = v.lenght;
+    int n = v.lenght; - tamanho do vetor
     
-    int tmp = v[i];
-    v[i] = v[n - i - 1]
-    v[n - i - 1] = tmp    
+    int tmp = v[i]; le o elemento
+    v[i] = v[n - i - 1] 1 elemento e copia o elemento q est ano fim
+    v[n - i - 1] = tmp   pega o ultimo elemento e armazena no primeiro 
     
-    */
-        
-    @Test
+     */
+ /*  @Test
     public void testa_inversao() {
         CalculadoraSimples calc = new CalculadoraSimples();
         int[] v = {3, 2, 4, 5};
         calc.inverte(v);
         int[] w = {5, 4, 2, 3};
         assertArrayEquals(w, v);
-    }
+    }*/
 }

@@ -145,4 +145,14 @@ public class CalculadoraSimples {
         }
     }
 
+    public void positivos(int[] v) {
+        //y=x*-1
+        for (int i = 0; i < v.length; i++) {
+            if (v[i] < 0) {
+                v[i] = v[i] * (-1);
+            }
+        }
+
+    }
+
 }//fim da classe
