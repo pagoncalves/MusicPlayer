@@ -155,4 +155,15 @@ public class CalculadoraSimples {
 
     }
 
+    public void inverte(int[] v) {
+        int n = v.length;
+        for (int i = 0; i < n; i++) {
+            for (int j = n - 1; j > i; j--) {
+                int temp = v[j - 1];
+                v[j - 1] = v[j];
+                v[j] = temp;
+            }
+        }
+
+    }
 }//fim da classe

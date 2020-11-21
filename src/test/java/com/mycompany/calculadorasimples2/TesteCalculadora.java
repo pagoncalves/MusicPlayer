@@ -133,12 +133,12 @@ public class TesteCalculadora {
     v[n - i - 1] = tmp   pega o ultimo elemento e armazena no primeiro 
     
      */
- /*  @Test
+    @Test
     public void testa_inversao() {
         CalculadoraSimples calc = new CalculadoraSimples();
         int[] v = {3, 2, 4, 5};
         calc.inverte(v);
         int[] w = {5, 4, 2, 3};
         assertArrayEquals(w, v);
-    }*/
+    }
 }
