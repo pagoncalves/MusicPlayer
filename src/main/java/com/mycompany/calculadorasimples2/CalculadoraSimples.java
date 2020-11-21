@@ -167,6 +167,9 @@ public class CalculadoraSimples {
 
     public int[] sequencia(int n) {
         int[] v = new int[n];
+        for (int i = 0; i < n; i++) {
+            v[i] = i + 1;
+        }
         return v;
     }
 }//fim da classe
