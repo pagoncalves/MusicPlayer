@@ -157,4 +157,12 @@ public class TesteCalculadora {
         int[] w = {1, 4, 9, 16};
         assertArrayEquals(w, v);
     }
+
+    @Test
+    public void testa_sequancia_reversa() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int[] v = calc.sequencia_reversa(4);
+        int[] w = {4, 3, 2, 1};
+        assertArrayEquals(w, v);
+    }
 }
