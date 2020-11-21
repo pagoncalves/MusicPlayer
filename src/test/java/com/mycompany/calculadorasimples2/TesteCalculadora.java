@@ -149,4 +149,12 @@ public class TesteCalculadora {
         int[] w = {1, 2, 3, 4};
         assertArrayEquals(w, v);
     }
+
+    @Test
+    public void testa_sequencia_quedrados() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int[] v = calc.sequencia_quadrados(4);
+        int[] w = {1, 2, 9, 16};
+        assertArrayEquals(w, v);
+    }
 }
