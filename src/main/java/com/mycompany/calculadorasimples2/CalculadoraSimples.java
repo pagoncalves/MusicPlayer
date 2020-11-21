@@ -149,7 +149,7 @@ public class CalculadoraSimples {
         //y=x*-1
         for (int i = 0; i < v.length; i++) {
             if (v[i] < 0) {
-                v[i] = v[i] * (-1);
+                v[i] = -v[i];
             }
         }
 
@@ -157,12 +157,11 @@ public class CalculadoraSimples {
 
     public void inverte(int[] v) {
         int n = v.length;
-        for (int i = 0; i < n; i++) {
-            for (int j = n - 1; j > i; j--) {
-                int temp = v[j - 1];
-                v[j - 1] = v[j];
-                v[j] = temp;
-            }
+        for (int i = 0; i < n / 2; i++) {
+            int tmp = v[i];
+            v[i] = v[n - i - 1];
+            v[n - i - 1] = tmp;
+
         }
 
     }
