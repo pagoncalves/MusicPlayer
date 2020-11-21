@@ -172,16 +172,23 @@ public class CalculadoraSimples {
         }
         return v;
     }
-    
-    public int[] sequencia_quadrados (int n){
-        int[]v = new int[n];
+
+    public int[] sequencia_quadrados(int n) {
+        int[] v = new int[n];
         for (int i = 1; i <= n; i++) {
-            v[i-1] =  i*i;//(v[i] = (i+1)*(i+1)
-            
+            v[i - 1] = i * i;//(v[i] = (i+1)*(i+1)
+
         }
         return v;
-       
+
     }
 
-    
+    public int[] sequencia_reversa(int n) {
+        int[] v = new int[n];//criacao de um vetor com 'n' elementos
+        for (int i = 0; i < n; i++) {
+            v[i] = n - i;
+        }
+        return v;
+    }
+
 }//fim da classe
