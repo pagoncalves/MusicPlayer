@@ -163,6 +163,10 @@ public class CalculadoraSimples {
             v[n - i - 1] = tmp;
 
         }
+    }
 
+    public int[] sequencia(int n) {
+        int[] v = new int[n];
+        return v;
     }
 }//fim da classe

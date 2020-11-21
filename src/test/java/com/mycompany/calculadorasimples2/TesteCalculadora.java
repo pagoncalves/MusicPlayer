@@ -141,4 +141,12 @@ public class TesteCalculadora {
         int[] w = {5, 4, 2, 3};
         assertArrayEquals(w, v);
     }
+
+    @Test
+    public void testa_sequencia() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int[] v = calc.sequencia(4);
+        int[] w = {1, 2, 3, 4};
+        assertArrayEquals(w, v);
+    }
 }
