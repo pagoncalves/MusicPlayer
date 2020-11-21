@@ -165,4 +165,13 @@ public class TesteCalculadora {
         int[] w = {4, 3, 2, 1};
         assertArrayEquals(w, v);
     }
+
+    @Test
+    public void testa_sequencia_a_partir_de() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int[] v = calc.sequencia_a_partir_de(4, 10);
+        int[] w = {10, 11, 12, 13};
+        assertArrayEquals(w, v);
+    }
+
 }
