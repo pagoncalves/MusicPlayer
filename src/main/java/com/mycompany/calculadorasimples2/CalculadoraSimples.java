@@ -191,4 +191,13 @@ public class CalculadoraSimples {
         return v;
     }
 
+    public int[] sequencia_a_partir_de(int n1, int n2) {
+        int[] v = new int[n1];
+        for (int i = 0; i < n1; i++) {
+            v[i] = n2 + i;
+        }
+        return v;
+
+    }
+
 }//fim da classe
