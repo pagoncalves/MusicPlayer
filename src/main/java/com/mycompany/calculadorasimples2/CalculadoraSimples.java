@@ -209,7 +209,7 @@ public class CalculadoraSimples {
         if (n % 2 == 0) {
             int i = n / 2;
             double m = (v[i] + v[i - 1]) / 2;
-            System.out.println(m);
+            //System.out.println(m);
             return m;
             /*precisa retornar o vetor que está na posição do resultado da 
 //             divisão, e o resultado */
@@ -229,6 +229,24 @@ public class CalculadoraSimples {
         }
         r[n - 1] = v[0];
         return r;
+    }
+
+    public int[] rotaciona_invertido(int[] v) {
+        int n = v.length;
+        int[] r = new int[n];
+        for (int i = 1; i < n; i++) {
+            r[i] = v[i - 1];
+        }
+        r[0] = v[n - 1];
+        System.out.println(Arrays.toString(r));
+
+        return r;
+    }
+
+    public int[] sequencia_quadrados_invertidos(int n) {
+        int[] v = sequencia_quadrados(n);//chama um metodo que esta na mesma classe
+        inverte(v);//chama o método
+        return v;
     }
 
 }//fim da classe
