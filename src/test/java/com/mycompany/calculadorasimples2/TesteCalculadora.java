@@ -174,4 +174,11 @@ public class TesteCalculadora {
         assertArrayEquals(w, v);
     }
 
+    @Test
+    public void testa_mediana() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        double[] v = {3, 2, 4, 5};
+        double med = calc.mediana(v);
+        assertEquals(3.5, med);
+    }
 }

@@ -1,5 +1,7 @@
 package com.mycompany.calculadorasimples2;
 
+import java.util.Arrays;
+
 public class CalculadoraSimples {
 
     public static void main(String[] args) {
@@ -194,10 +196,29 @@ public class CalculadoraSimples {
     public int[] sequencia_a_partir_de(int n1, int n2) {
         int[] v = new int[n1];
         for (int i = 0; i < n1; i++) {
-            v[i] = n2 + i;
+            v[i] = n2 + i;//vetor na posição i recebe n2 + contador
         }
         return v;
 
+    }
+
+    public double mediana(double[] v) {
+        int n = v.length;
+
+        Arrays.sort(v);
+        if (n % 2 == 0) {
+            int i = n / 2;
+            double m = (v[i] + v[i - 1]) / 2;
+            System.out.println(m);
+            return m;
+            /*precisa retornar o vetor que está na posição do resultado da 
+             divisão, e o resultado + 1*/
+        } else {
+            int i = (n - 1) / 2;
+            return v[i];
+            //precisa retornar o vetor que está na posição do resultado da divisão
+
+        }
     }
 
 }//fim da classe
