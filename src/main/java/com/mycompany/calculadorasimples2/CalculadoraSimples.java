@@ -212,13 +212,23 @@ public class CalculadoraSimples {
             System.out.println(m);
             return m;
             /*precisa retornar o vetor que está na posição do resultado da 
-             divisão, e o resultado + 1*/
+//             divisão, e o resultado */
         } else {
             int i = (n - 1) / 2;
             return v[i];
             //precisa retornar o vetor que está na posição do resultado da divisão
 
         }
+    }
+
+    public int[] rotaciona(int[] v) {
+        int n = v.length;
+        int[] r = new int[n];
+        for (int i = 1; i < n; i++) {
+            r[i - 1] = v[i];
+        }
+        r[n - 1] = v[0];
+        return r;
     }
 
 }//fim da classe
