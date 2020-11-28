@@ -190,4 +190,22 @@ public class TesteCalculadora {
         int[] esperado = {2, 4, 5, 3};
         assertArrayEquals(esperado, r);
     }
+
+    @Test
+    public void testa_rotacao_invertido() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int[] v = {3, 2, 4, 5};
+        int[] r = calc.rotaciona_invertido(v);
+        int[] esperado = {5, 3, 2, 4};
+        assertArrayEquals(esperado, r);
+    }
+
+    @Test
+    public void testa_sequencia_quadrados_invertido() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int[] v = calc.sequencia_quadrados_invertidos(4);
+        int[] w = {16, 9, 4, 1};
+        assertArrayEquals(w, v);
+    }
+
 }
