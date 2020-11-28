@@ -181,4 +181,13 @@ public class TesteCalculadora {
         double med = calc.mediana(v);
         assertEquals(3.5, med);
     }
+
+    @Test
+    public void testa_rotacao() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int[] v = {3, 2, 4, 5};
+        int[] r = calc.rotaciona(v);
+        int[] esperado = {2, 4, 5, 3};
+        assertArrayEquals(esperado, r);
+    }
 }
