@@ -248,10 +248,10 @@ public class CalculadoraSimples {
         inverte(v);//chama o método
         return v;
     }
-    
-    public double potencia_quadrados(double n1, int n){
+
+    public double potencia_quadrados(double n1, int n) {
         int n2 = soma_quadrados(n);
-        double r = potencia(n1,n2);
+        double r = potencia(n1, n2);
         return r;
     }
 
