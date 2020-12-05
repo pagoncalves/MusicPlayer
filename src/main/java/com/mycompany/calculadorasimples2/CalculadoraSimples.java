@@ -255,4 +255,10 @@ public class CalculadoraSimples {
         return r;
     }
 
+    public int soma_e_mult(int n1, int n2, int n3, int n4) {
+        int s1 = soma(n1, n2);
+        int s2 = soma(n3, n4);
+        int r = mult(s1, s2);
+        return r;
+    }
 }//fim da classe
