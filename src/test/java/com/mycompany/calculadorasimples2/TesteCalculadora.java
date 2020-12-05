@@ -208,4 +208,11 @@ public class TesteCalculadora {
         assertArrayEquals(w, v);
     }
 
+    @Test
+    public void testa_potencia_quadrados() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        double r = calc.potencia_quadrados(2, 4);
+        // Usar soma_seq e potencia
+        assertEquals( Math.pow(2, 1 + 4 + 8 + 16),r);
+    }
 }
