@@ -213,7 +213,7 @@ public class TesteCalculadora {
         CalculadoraSimples calc = new CalculadoraSimples();
         double r = calc.potencia_quadrados(2, 4);
         // Usar soma_seq e potencia
-        assertEquals( Math.pow(2, 1 + 4 + 8 + 16),r);
+        assertEquals( Math.pow(2, 1 + 4 + 9 + 16),r);
     }
 
     @Test
