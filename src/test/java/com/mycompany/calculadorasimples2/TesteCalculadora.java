@@ -222,4 +222,11 @@ public class TesteCalculadora {
         int r = calc.soma_e_mult(2, 3, 4, 5);
         assertEquals( (2+3)*(4+5), r);
     }
+    @Test
+    public void testa_media4() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        // usar somente media2
+        double r = calc.media4(2, 3, 4, 5);
+        assertEquals(3.5, r);
+    }
 }
