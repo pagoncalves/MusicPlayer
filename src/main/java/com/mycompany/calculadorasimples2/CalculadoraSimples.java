@@ -261,4 +261,11 @@ public class CalculadoraSimples {
         int r = mult(s1, s2);
         return r;
     }
+
+    public double media4(int n1, int n2, int n3, int n4) {
+        double m1 = media2(n1, n2);
+        double m2 = media2(n3, n4);
+        double r = media2(m1, m2);
+        return r;
+    }
 }//fim da classe
