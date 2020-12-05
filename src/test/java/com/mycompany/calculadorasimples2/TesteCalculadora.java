@@ -215,4 +215,11 @@ public class TesteCalculadora {
         // Usar soma_seq e potencia
         assertEquals( Math.pow(2, 1 + 4 + 8 + 16),r);
     }
+
+    @Test
+    public void testa_soma_e_mult() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        int r = calc.soma_e_mult(2, 3, 4, 5);
+        assertEquals( (2+3)*(4+5), r);
+    }
 }
