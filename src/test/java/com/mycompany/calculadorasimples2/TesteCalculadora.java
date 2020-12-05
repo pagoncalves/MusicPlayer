@@ -222,11 +222,21 @@ public class TesteCalculadora {
         int r = calc.soma_e_mult(2, 3, 4, 5);
         assertEquals( (2+3)*(4+5), r);
     }
+
     @Test
     public void testa_media4() {
         CalculadoraSimples calc = new CalculadoraSimples();
         // usar somente media2
         double r = calc.media4(2, 3, 4, 5);
         assertEquals(3.5, r);
+    }
+
+    @Test
+    public void testa_desce_e_sobe() {
+        CalculadoraSimples calc = new CalculadoraSimples();
+        // sequencia_a_partir_de e positivos
+        int[] v = calc.desce_e_sobe(2, 5);
+        int[] w = {2, 1, 0, 1, 2};
+        assertArrayEquals(w, v);
     }
 }
