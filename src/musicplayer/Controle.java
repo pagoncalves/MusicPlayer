@@ -114,6 +114,7 @@ package musicplayer;
 
     @Override
     public void aleatorio() {
+        //construir algoritmo com arrays
     }
     
 }
