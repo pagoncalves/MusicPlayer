@@ -4,6 +4,7 @@ public interface InterfaceControle {
     //public para ser acessado fora 
     //abstract porque não será utilizado na classe
     //void porque nao retorna
+    public abstract void abrirMenu();//abrir display
     public abstract void ligar();//liga
     public abstract void desligar();//deliga
     public abstract void play();//inicia
