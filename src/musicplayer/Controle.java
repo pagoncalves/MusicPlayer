@@ -1,13 +1,11 @@
 package musicplayer;
 
-import java.lang.reflect.Array;
-
 public class Controle implements InterfaceControle {
 
     //Atributos 
     private boolean ligado;
     private boolean tocando;
-    private int[] faixa = new int [0];/*Arrumar metodo aleatorio*/
+    private int faixa;
     private int volume;
 
     //Métodos Especiais 
@@ -15,7 +13,7 @@ public class Controle implements InterfaceControle {
     public Controle() {
         this.ligado = false;
         this.tocando = false;
-        this.faixa = new int[12] ;
+        this.faixa = 1;
         this.volume = 10;
     }
 
@@ -113,17 +111,6 @@ public class Controle implements InterfaceControle {
         if (this.getLigado()) {
             this.setVolume(this.getVolume() - 2);
         }
-    }
-
-    @Override
-    public void aleatorio() {
-        //construir algoritmo com arrays
-        int fx[] = null;
-        for (int i = 1; i < fx.length; i++) {
-            fx[i] = i;
-
-        }
-
     }
 
     @Override
