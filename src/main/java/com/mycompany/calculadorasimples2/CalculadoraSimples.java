@@ -268,4 +268,11 @@ public class CalculadoraSimples {
         double r = media2(m1, m2);
         return r;
     }
+
+    public int[] desce_e_sobe(int n1, int n2) {
+        n1 *= (-1);
+        int a[] = sequencia_a_partir_de(n2, n1);
+        positivos(a);
+        return a;
+    }
 }//fim da classe
