@@ -1,5 +1,7 @@
 package musicplayer;
 
+import java.util.Random;
+
 public class Controle implements InterfaceControle {
 
     //Atributos 
@@ -7,6 +9,8 @@ public class Controle implements InterfaceControle {
     private boolean tocando;
     private int faixa;
     private int volume;
+    private boolean aleatorio;
+    private int nfaixa;
 
     //Métodos Especiais 
 //construtor define o estado inicial do objeto 
@@ -15,6 +19,8 @@ public class Controle implements InterfaceControle {
         this.tocando = false;
         this.faixa = 1;
         this.volume = 10;
+        this.nfaixa = 3;
+        this.aleatorio = false;
     }
 
     public boolean getLigado() {
@@ -47,6 +53,22 @@ public class Controle implements InterfaceControle {
 
     public void setVolume(int volume) {
         this.volume = volume;
+    }
+
+    public boolean isAleatorio() {
+        return aleatorio;
+    }
+
+    public void setAleatorio(boolean aleatorio) {
+        this.aleatorio = aleatorio;
+    }
+
+    public int getNfaixa() {
+        return nfaixa;
+    }
+
+    public void setNfaixa(int nfaixa) {
+        this.nfaixa = nfaixa;
     }
 
     //Métodos abstratos
@@ -86,9 +108,20 @@ public class Controle implements InterfaceControle {
     }
 
     @Override
-    public void próxima() {
-        if (this.getLigado()) {
-            this.setFaixa(this.getFaixa() + 1);
+    public void proxima() {
+        if (this.getLigado() && (this.getFaixa() < this.getNfaixa() + 1) && (this.getFaixa() > 0)) {
+            if (aleatorio == true && faixa > 0) {
+                Random ale = new Random();
+                this.setFaixa(ale.nextInt(this.getNfaixa()));
+            } else {
+                if (faixa == nfaixa) {
+                    faixa = 1;
+                } else {
+                    this.setFaixa(this.getFaixa() + 1);
+                }
+
+            }
+
         }
     }
 
@@ -108,7 +141,7 @@ public class Controle implements InterfaceControle {
 
     @Override
     public void diminuirVolume() {
-        if (this.getLigado()) {
+        if (this.getLigado() && this.getVolume() >= 0) {
             this.setVolume(this.getVolume() - 2);
         }
     }
@@ -123,6 +156,26 @@ public class Controle implements InterfaceControle {
         } else {
             System.out.println("||");
         }
+        if (this.aleatorio == true) {
+            System.out.println("?");
+        } else {
+            System.out.println(">1");
+        }
+    }
+
+    @Override
+    public void aleatorio() {
+        if (ligado == true) {
+            this.setAleatorio(true);
+            proxima();
+        }
+
+    }
+
+    @Override
+    public void desligaAleatorio() {
+        this.setAleatorio(false);
+        proxima();
     }
 
 }
