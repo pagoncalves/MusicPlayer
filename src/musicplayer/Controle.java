@@ -10,7 +10,7 @@ public class Controle implements InterfaceControle {
     private int faixa;
     private int volume;
     private boolean aleatorio;
-    private int nfaixa;
+    private int nfaixa;//numero de faixas
 
     //Métodos Especiais 
 //construtor define o estado inicial do objeto 
@@ -19,7 +19,7 @@ public class Controle implements InterfaceControle {
         this.tocando = false;
         this.faixa = 1;
         this.volume = 10;
-        this.nfaixa = 3;
+        this.nfaixa = 12 ;
         this.aleatorio = false;
     }
 
@@ -75,14 +75,14 @@ public class Controle implements InterfaceControle {
     @Override
     public void ligar() {
         this.setLigado(true);
-        System.out.println("Bem vindo");
+        System.out.println("Bem vindo!");
 
     }
 
     @Override
     public void desligar() {
         this.setLigado(false);
-        System.out.println("Desligando");
+        System.out.println("Desligando...");
     }
 
     @Override
@@ -109,12 +109,12 @@ public class Controle implements InterfaceControle {
 
     @Override
     public void proxima() {
-        if (this.getLigado() && (this.getFaixa() < this.getNfaixa() + 1) && (this.getFaixa() > 0)) {
-            if (aleatorio == true && faixa > 0) {
+        if (this.getLigado()  && (this.getNfaixa() > 0) ) {
+            if (aleatorio == true ) {
                 Random ale = new Random();
                 this.setFaixa(ale.nextInt(this.getNfaixa()));
             } else {
-                if (faixa == nfaixa) {
+                if (faixa == nfaixa ) {
                     faixa = 1;
                 } else {
                     this.setFaixa(this.getFaixa() + 1);
@@ -134,7 +134,7 @@ public class Controle implements InterfaceControle {
 
     @Override
     public void aumentarVolume() {
-        if (this.getLigado()) {
+        if (this.getLigado() && this.getVolume() < 30) {
             this.setVolume(this.getVolume() + 2);
         }
     }

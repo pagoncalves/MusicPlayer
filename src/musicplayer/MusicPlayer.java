@@ -19,7 +19,7 @@ public class MusicPlayer {
         c.abrirMenu();
         c.play();
         c.abrirMenu();
-        /* c.stop();
+        c.stop();
         c.abrirMenu();
         c.play();
         c.aleatorio();
@@ -28,11 +28,8 @@ public class MusicPlayer {
         c.proxima();
         c.abrirMenu();
         c.desligaAleatorio();
-        c.abrirMenu();*/
-        c.proxima();
         c.abrirMenu();
-        c.proxima();
-        c.abrirMenu();
+        c.desligar();
     }
 
 }
