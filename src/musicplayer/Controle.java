@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Controle implements InterfaceControle {
 
-    //Atributos 
+    //Atributos
     private boolean ligado;
     private boolean tocando;
     private int faixa;
@@ -12,14 +12,14 @@ public class Controle implements InterfaceControle {
     private boolean aleatorio;
     private int nfaixa;//numero de faixas
 
-    //Métodos Especiais 
-//construtor define o estado inicial do objeto 
+    //Métodos Especiais
+//construtor define o estado inicial do objeto
     public Controle() {
         this.ligado = false;
         this.tocando = false;
         this.faixa = 1;
         this.volume = 10;
-        this.nfaixa = 12 ;
+        this.nfaixa = 12;
         this.aleatorio = false;
     }
 
@@ -109,12 +109,12 @@ public class Controle implements InterfaceControle {
 
     @Override
     public void proxima() {
-        if (this.getLigado()  && (this.getNfaixa() > 0) ) {
-            if (aleatorio == true ) {
+        if (this.getLigado() && (this.getNfaixa() > 0)) {
+            if (aleatorio == true) {
                 Random ale = new Random();
                 this.setFaixa(ale.nextInt(this.getNfaixa()));
             } else {
-                if (faixa == nfaixa ) {
+                if (faixa == nfaixa) {
                     faixa = 1;
                 } else {
                     this.setFaixa(this.getFaixa() + 1);
